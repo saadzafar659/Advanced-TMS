@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+task-management,com.task.management.mapper,BeanMapper,0,44,0,0,0,12,0,2,0,2
+task-management,com.task.management.controller,TaskControllerAdvice,0,19,0,0,0,7,0,4,0,4
+task-management,com.task.management.controller,HTMLController,0,25,0,0,0,10,0,2,0,2
+task-management,com.task.management.controller,TaskController,4,48,0,2,1,9,1,6,1,5
+task-management,com.task.management.service,TaskService,12,72,0,4,4,14,1,8,1,6
