@@ -1,0 +1,9 @@
+com\task\management\e2e\TestRunnerE2E.class
+com\task\management\service\TaskServiceTest.class
+com\task\management\TaskManagementApplicationTestIT.class
+com\task\management\e2e\TaskForm.class
+com\task\management\integration\HTMLControllerTestIT.class
+com\task\management\integration\TaskControllerTestIT.class
+com\task\management\mapper\BeanMapperTest.class
+com\task\management\controller\TaskControllerAdviceTest.class
+com\task\management\controller\TaskControllerTest.class

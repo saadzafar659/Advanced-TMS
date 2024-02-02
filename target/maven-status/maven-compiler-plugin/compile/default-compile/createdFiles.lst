@@ -1,0 +1,9 @@
+com\task\management\controller\HTMLController.class
+com\task\management\controller\TaskController.class
+com\task\management\controller\TaskControllerAdvice.class
+com\task\management\entity\TaskEntity.class
+com\task\management\model\TaskDto.class
+com\task\management\TaskManagementApplication.class
+com\task\management\service\TaskService.class
+com\task\management\repository\TaskRepository.class
+com\task\management\mapper\BeanMapper.class
