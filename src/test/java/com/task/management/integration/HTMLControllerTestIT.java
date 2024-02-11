@@ -20,7 +20,6 @@ import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.task.management.entity.TaskEntity;
 import com.task.management.model.TaskDto;
 import com.task.management.repository.TaskRepository;
 
@@ -35,8 +34,7 @@ public class HTMLControllerTestIT {
 
 	@LocalServerPort
 	private int port;
-	
-	
+
 	@DynamicPropertySource
 	static void databaseProperties(DynamicPropertyRegistry registry) {
 		registry.add("spring.jpa.hibernate.ddl-auto", () -> "update");
@@ -45,38 +43,31 @@ public class HTMLControllerTestIT {
 		registry.add("spring.datasource.username", mySQLContainer::getUsername);
 		registry.add("spring.datasource.password", mySQLContainer::getPassword);
 	}
-	
 
+	@Autowired
+	private TestRestTemplate restTemplate;
 
-    @Autowired
-    private TestRestTemplate restTemplate;
+	@Autowired
+	private ObjectMapper objectMapper;
 
-    @Autowired
-    private ObjectMapper objectMapper;
+	@Autowired
+	private TaskRepository taskRepository;
 
-    @Autowired
-    private TaskRepository taskRepository;
-    
 	@Test
-    public void testSaveContact() {
-        // Given
-        TaskDto taskDto = new TaskDto();
-        taskDto.setName("Test Contact");
-        taskDto.setAuthor("Test Creator");
-        taskDto.setPrice(50);
+	public void testSaveContact() {
+		// Given
+		TaskDto taskDto = new TaskDto();
+		taskDto.setName("Test Contact");
+		taskDto.setAuthor("Test Creator");
+		taskDto.setPrice(50);
 
-        HttpEntity<TaskDto> request = new HttpEntity<>(taskDto);
+		HttpEntity<TaskDto> request = new HttpEntity<>(taskDto);
 
-        // When
-        ResponseEntity<Void> responseEntity = restTemplate.exchange(
-                "http://localhost:" + port + "/saveTask",
-                HttpMethod.POST,
-                request,
-                Void.class
-        );
+		// When
+		ResponseEntity<Void> responseEntity = restTemplate.exchange("http://localhost:" + port + "/saveTask",
+				HttpMethod.POST, request, Void.class);
 
-        // Then
-        assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.FOUND);     }
+		// Then
+		assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.FOUND);
+	}
 }
-
-	

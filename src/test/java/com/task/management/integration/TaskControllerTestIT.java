@@ -32,8 +32,7 @@ public class TaskControllerTestIT {
 
 	@LocalServerPort
 	private int port;
-	
-	
+
 	@DynamicPropertySource
 	static void databaseProperties(DynamicPropertyRegistry registry) {
 		registry.add("spring.jpa.hibernate.ddl-auto", () -> "update");
@@ -42,25 +41,23 @@ public class TaskControllerTestIT {
 		registry.add("spring.datasource.username", mySQLContainer::getUsername);
 		registry.add("spring.datasource.password", mySQLContainer::getPassword);
 	}
-	
-    @Autowired
-    private MockMvc mockMvc;
 
-    @Autowired
-    private ObjectMapper objectMapper;
-    @Test
-    public void testCreateTask() throws Exception {
-        TaskDto taskDto = new TaskDto();
-        taskDto.setName("Test");
-        taskDto.setAuthor("Test");
-        taskDto.setPrice(50);
+	@Autowired
+	private MockMvc mockMvc;
 
-        mockMvc.perform(post("/books")
-                .content(objectMapper.writeValueAsString(taskDto))
-                .contentType(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$.name").value("Test"))
-                .andExpect(jsonPath("$.author").value("Test"))
-                .andExpect(jsonPath("$.price").value(50));
-    }
+	@Autowired
+	private ObjectMapper objectMapper;
+
+	@Test
+	public void testCreateTask() throws Exception {
+		TaskDto taskDto = new TaskDto();
+		taskDto.setName("Test");
+		taskDto.setAuthor("Test");
+		taskDto.setPrice(50);
+
+		mockMvc.perform(post("/books").content(objectMapper.writeValueAsString(taskDto))
+				.contentType(MediaType.APPLICATION_JSON)).andExpect(status().isOk())
+				.andExpect(jsonPath("$.name").value("Test")).andExpect(jsonPath("$.author").value("Test"))
+				.andExpect(jsonPath("$.price").value(50));
+	}
 }
