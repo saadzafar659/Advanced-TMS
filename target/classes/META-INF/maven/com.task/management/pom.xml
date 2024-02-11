@@ -127,7 +127,7 @@
 			<artifactId>sonar-maven-plugin</artifactId>
 			<version>3.9.1.2184</version>
 		</dependency>
-				<!-- Cucumber dependencies -->
+		<!-- Cucumber dependencies -->
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
@@ -156,19 +156,19 @@
 						</goals>
 					</execution>
 					<execution>
-				      <id>e2e-tests</id>
-				      <goals>
-				        <goal>integration-test</goal>
-				        <goal>verify</goal>
-				      </goals>
-				      <configuration>
-				        <includes>
-				          <include>**/*E2E.java</include>
-				        </includes>
-				      </configuration>
-				    </execution>
+						<id>e2e-tests</id>
+						<goals>
+							<goal>integration-test</goal>
+							<goal>verify</goal>
+						</goals>
+						<configuration>
+							<includes>
+								<include>**/*E2E.java</include>
+							</includes>
+						</configuration>
+					</execution>
 				</executions>
-				
+
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -249,7 +249,10 @@
 						<param>com.task.management.mapper.*</param>
 						<param>com.task.management.controller.*</param>
 					</targetClasses>
-
+					<excludedTestClasses>
+						<param>com.task.management.integration.HTMLControllerTestIT</param>
+						<param>com.task.management.e2e.TestRunnerE2E</param>
+					</excludedTestClasses>
 					<targetTests>
 						<param>com.task.management.mapper.*</param>
 						<param>com.task.management.controller.*</param>
