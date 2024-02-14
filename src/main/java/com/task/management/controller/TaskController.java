@@ -1,7 +1,5 @@
 package com.task.management.controller;
 
-import java.util.List;
-
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,11 +21,6 @@ public class TaskController {
 
 	@Autowired
 	private TaskService taskService;
-
-    @GetMapping
-    public List<TaskDto> getBooks() {
-        return taskService.getBooks();
-    }
 
 	@GetMapping("/{id}")
 	public TaskDto getBook(@PathVariable("id") Integer id) {

@@ -1,8 +1,6 @@
 package com.task.management.service;
 
-import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,13 +15,6 @@ public class TaskService {
 
 	@Autowired
 	private TaskRepository taskRepository;
-
-	public List<TaskDto> getBooks() {
-	    List<TaskEntity> books = taskRepository.findAll();
-	    return books.stream()
-	                .map(BeanMapper::mapToDto)
-	                .collect(Collectors.toList());
-	}
 
 	public TaskDto getBook(Integer id) {
 		TaskEntity book = taskRepository.findById(id)
