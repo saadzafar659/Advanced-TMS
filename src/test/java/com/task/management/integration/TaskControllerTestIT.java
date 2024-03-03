@@ -55,7 +55,7 @@ public class TaskControllerTestIT {
 		taskDto.setAuthor("Test");
 		taskDto.setPrice(50);
 
-		mockMvc.perform(post("/books").content(objectMapper.writeValueAsString(taskDto))
+		mockMvc.perform(post("/tasks").content(objectMapper.writeValueAsString(taskDto))
 				.contentType(MediaType.APPLICATION_JSON)).andExpect(status().isOk())
 				.andExpect(jsonPath("$.name").value("Test")).andExpect(jsonPath("$.author").value("Test"))
 				.andExpect(jsonPath("$.price").value(50));
