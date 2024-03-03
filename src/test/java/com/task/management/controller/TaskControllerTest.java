@@ -41,70 +41,70 @@ public class TaskControllerTest {
 	}
 
 	@Test
-	public void testGetBook() {
-		when(service.getBook(any())).thenReturn(task);
-		TaskDto result = controller.getBook(id);
-		verify(service).getBook(any());
+	public void testGetTask() {
+		when(service.getTask(any())).thenReturn(task);
+		TaskDto result = controller.getTask(id);
+		verify(service).getTask(any());
 		assertEquals(task, result);
 	}
 
 	@Test
-	public void testGetBookNotFound() {
-		when(service.getBook(any())).thenThrow(exception);
-		NoSuchElementException result = assertThrows(NoSuchElementException.class, () -> controller.getBook(1));
-		verify(service).getBook(any());
+	public void testGetTaskNotFound() {
+		when(service.getTask(any())).thenThrow(exception);
+		NoSuchElementException result = assertThrows(NoSuchElementException.class, () -> controller.getTask(1));
+		verify(service).getTask(any());
 		assertEquals(exception.getMessage(), result.getMessage());
 	}
 
 	@Test
-	public void testSaveBook() {
-		when(service.saveBook(any())).thenReturn(task);
-		TaskDto result = controller.saveBook(task);
-		verify(service).saveBook(any());
+	public void testSaveTask() {
+		when(service.saveTask(any())).thenReturn(task);
+		TaskDto result = controller.saveTask(task);
+		verify(service).saveTask(any());
 		assertEquals(task, result);
 	}
 
 	@Test
-	public void testUpdateBook() {
+	public void testUpdateTask() {
 		task.setId(id);
-		when(service.updateBook(any(), any())).thenReturn(task);
-		TaskDto result = controller.updateBook(id, task);
-		verify(service).updateBook(any(), any());
+		when(service.updateTask(any(), any())).thenReturn(task);
+		TaskDto result = controller.updateTask(id, task);
+		verify(service).updateTask(any(), any());
 		assertEquals(task, result);
 	}
 
 	@Test
-	public void testUpdateBookNotFound() {
+	public void testUpdateTaskNotFound() {
 		task.setId(id);
-		when(service.updateBook(any(), any())).thenThrow(exception);
+		when(service.updateTask(any(), any())).thenThrow(exception);
 		NoSuchElementException result = assertThrows(NoSuchElementException.class,
-				() -> controller.updateBook(id, task));
-		verify(service).updateBook(any(), any());
+				() -> controller.updateTask(id, task));
+		verify(service).updateTask(any(), any());
 		assertEquals(exception.getMessage(), result.getMessage());
 	}
 
 	@Test
-	public void testUpdateBookDifferentId() {
+	public void testUpdateTaskDifferentId() {
 		task.setId(id + 1);
 		IllegalArgumentException result = assertThrows(IllegalArgumentException.class,
-				() -> controller.updateBook(id, task));
-		verify(service, never()).updateBook(any(), any());
+				() -> controller.updateTask(id, task));
+		verify(service, never()).updateTask(any(), any());
 		assertEquals(String.format("Id for url (%d) and dto (%d) must be the same", id, task.getId()),
 				result.getMessage());
 	}
 
 	@Test
-	public void testDeleteBook() {
-		Boolean result = controller.deleteBook(id);
-		verify(service).deleteBook(any());
+	public void testDeleteTask() {
+		Boolean result = controller.deleteTask(id);
+		verify(service).deleteTask(any());
 		assertTrue(result);
 	}
 
 	@Test
-	public void testDeleteBookNotFound() {
-		doThrow(exception).when(service).deleteBook(any());
-		NoSuchElementException result = assertThrows(NoSuchElementException.class, () -> controller.deleteBook(id));
-		verify(service).deleteBook(any());
+	public void testDeleteTaskNotFound() {
+		doThrow(exception).when(service).deleteTask(any());
+		NoSuchElementException result = assertThrows(NoSuchElementException.class, () -> controller.deleteTask(id));
+		verify(service).deleteTask(any());
 		assertEquals(exception.getMessage(), result.getMessage());
 	}
 }

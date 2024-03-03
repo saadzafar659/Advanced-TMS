@@ -16,28 +16,28 @@ public class TaskService {
 	@Autowired
 	private TaskRepository taskRepository;
 
-	public TaskDto getBook(Integer id) {
-		TaskEntity book = taskRepository.findById(id)
-				.orElseThrow(() -> new NoSuchElementException("There is no Book Found with " + id));
-		return BeanMapper.mapToDto(book);
+	public TaskDto getTask(Integer id) {
+		TaskEntity task = taskRepository.findById(id)
+				.orElseThrow(() -> new NoSuchElementException("There is no Task Found with " + id));
+		return BeanMapper.mapToDto(task);
 	}
 
-	public TaskDto saveBook(TaskDto book) {
-		TaskEntity newBook = BeanMapper.mapToEntity(book);
-		return BeanMapper.mapToDto(taskRepository.save(newBook));
+	public TaskDto saveTask(TaskDto task) {
+		TaskEntity newTask = BeanMapper.mapToEntity(task);
+		return BeanMapper.mapToDto(taskRepository.save(newTask));
 	}
 
-	public TaskDto updateBook(Integer id, TaskDto book) {
+	public TaskDto updateTask(Integer id, TaskDto task) {
 		if (!taskRepository.existsById(id)) {
 			throw new NoSuchElementException("Please insert correct Id " + id);
 		}
-		TaskEntity updatedBook = taskRepository.save(BeanMapper.mapToEntity(book));
-		return BeanMapper.mapToDto(taskRepository.save(updatedBook));
+		TaskEntity updatedTask = taskRepository.save(BeanMapper.mapToEntity(task));
+		return BeanMapper.mapToDto(taskRepository.save(updatedTask));
 	}
 
-	public void deleteBook(Integer id) {
+	public void deleteTask(Integer id) {
 		if (!taskRepository.existsById(id)) {
-			throw new NoSuchElementException("Book you selected is not Present with " + id);
+			throw new NoSuchElementException("Task you selected is not Present with " + id);
 		}
 		taskRepository.deleteById(id);
 	}

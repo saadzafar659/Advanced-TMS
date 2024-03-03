@@ -1,0 +1,293 @@
+# Created at 2024-03-03T20:24:54.315
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2024-03-03T20:25:01.371
+Unexpected IOException with stream: 2024-03-03 20:25:01.370  INFO 37284 --- [           main] tc.mysql:8.1.0                           : Container mysql:8.1.0 started in PT19.159061S
+
+
+# Created at 2024-03-03T20:25:01.373
+Unexpected IOException with stream: 2024-03-03 20:25:01.372  INFO 37284 --- [           main] tc.mysql:8.1.0                           : Container is started (JDBC URL: jdbc:mysql://localhost:60958/task)
+
+
+# Created at 2024-03-03T20:25:01.557
+Unexpected IOException with stream: 
+
+
+# Created at 2024-03-03T20:25:01.559
+Unexpected IOException with stream:   .   ____          _            __ _ _
+
+
+# Created at 2024-03-03T20:25:01.563
+Unexpected IOException with stream:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+
+
+# Created at 2024-03-03T20:25:01.564
+Unexpected IOException with stream: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+
+
+# Created at 2024-03-03T20:25:01.566
+Unexpected IOException with stream:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+
+
+# Created at 2024-03-03T20:25:01.568
+Unexpected IOException with stream:   '  |____| .__|_| |_|_| |_\__, | / / / /
+
+
+# Created at 2024-03-03T20:25:01.570
+Unexpected IOException with stream:  =========|_|==============|___/=/_/_/_/
+
+
+# Created at 2024-03-03T20:25:01.571
+Unexpected IOException with stream:  :: Spring Boot ::                (v2.6.3)
+
+
+# Created at 2024-03-03T20:25:01.574
+Unexpected IOException with stream: 
+
+
+# Created at 2024-03-03T20:25:01.583
+Unexpected IOException with stream: 2024-03-03 20:25:01.582  INFO 37284 --- [           main] c.t.m.integration.TaskControllerTestIT   : Starting TaskControllerTestIT using Java 11.0.15.1 on DESKTOP-MRL3MOK with PID 37284 (started by Fahad Nadeem in C:\Users\Fahad Nadeem\OneDrive\Documents\GitHub\Advanced-TMS)
+
+
+# Created at 2024-03-03T20:25:01.586
+Unexpected IOException with stream: 2024-03-03 20:25:01.584  INFO 37284 --- [           main] c.t.m.integration.TaskControllerTestIT   : No active profile set, falling back to default profiles: default
+
+
+# Created at 2024-03-03T20:25:02.032
+Unexpected IOException with stream: 2024-03-03 20:25:02.030  INFO 37284 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+
+
+# Created at 2024-03-03T20:25:02.061
+Unexpected IOException with stream: 2024-03-03 20:25:02.060  INFO 37284 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
+
+
+# Created at 2024-03-03T20:25:02.527
+Unexpected IOException with stream: 2024-03-03 20:25:02.526  INFO 37284 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+
+
+# Created at 2024-03-03T20:25:02.530
+Unexpected IOException with stream: 2024-03-03 20:25:02.529  INFO 37284 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+
+
+# Created at 2024-03-03T20:25:02.531
+Unexpected IOException with stream: 2024-03-03 20:25:02.530  INFO 37284 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+
+
+# Created at 2024-03-03T20:25:02.689
+Unexpected IOException with stream: 2024-03-03 20:25:02.687  INFO 37284 --- [           main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+
+
+# Created at 2024-03-03T20:25:02.691
+Unexpected IOException with stream: 2024-03-03 20:25:02.690  INFO 37284 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1098 ms
+
+
+# Created at 2024-03-03T20:25:02.918
+Unexpected IOException with stream: 2024-03-03 20:25:02.917  INFO 37284 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+
+
+# Created at 2024-03-03T20:25:02.930
+Unexpected IOException with stream: 2024-03-03 20:25:02.929  INFO 37284 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+
+
+# Created at 2024-03-03T20:25:03.035
+Unexpected IOException with stream: 2024-03-03 20:25:03.033  INFO 37284 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+
+
+# Created at 2024-03-03T20:25:03.037
+Unexpected IOException with stream: 2024-03-03 20:25:03.035  INFO 37284 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+
+
+# Created at 2024-03-03T20:25:03.162
+Unexpected IOException with stream: 2024-03-03 20:25:03.161  INFO 37284 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+
+
+# Created at 2024-03-03T20:25:03.164
+Unexpected IOException with stream: 2024-03-03 20:25:03.164  INFO 37284 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+
+# Created at 2024-03-03T20:25:03.421
+Unexpected IOException with stream: 2024-03-03 20:25:03.420  WARN 37284 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+
+# Created at 2024-03-03T20:25:05.191
+Unexpected IOException with stream: 2024-03-03 20:25:05.188  INFO 37284 --- [           main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring TestDispatcherServlet ''
+
+
+# Created at 2024-03-03T20:25:05.194
+Unexpected IOException with stream: 2024-03-03 20:25:05.192  INFO 37284 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+
+
+# Created at 2024-03-03T20:25:05.199
+Unexpected IOException with stream: 2024-03-03 20:25:05.197  INFO 37284 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+
+
+# Created at 2024-03-03T20:25:05.258
+Unexpected IOException with stream: 2024-03-03 20:25:05.256  INFO 37284 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61128 (http) with context path ''
+
+
+# Created at 2024-03-03T20:25:05.271
+Unexpected IOException with stream: 2024-03-03 20:25:05.269  INFO 37284 --- [           main] c.t.m.integration.TaskControllerTestIT   : Started TaskControllerTestIT in 3.888 seconds (JVM running for 70.341)
+
+
+# Created at 2024-03-03T20:25:05.283
+Unexpected IOException: 5,1,com.task.management.integration.TaskControllerTestIT,testCreateTask,null,null,null
+
+
+# Created at 2024-03-03T20:25:05.447
+Unexpected IOException with stream: 
+
+
+# Created at 2024-03-03T20:25:05.450
+Unexpected IOException with stream: MockHttpServletRequest:
+
+
+# Created at 2024-03-03T20:25:05.452
+Unexpected IOException with stream:       HTTP Method = POST
+
+
+# Created at 2024-03-03T20:25:05.454
+Unexpected IOException with stream:       Request URI = /books
+
+
+# Created at 2024-03-03T20:25:05.456
+Unexpected IOException with stream:        Parameters = {}
+
+
+# Created at 2024-03-03T20:25:05.458
+Unexpected IOException with stream:           Headers = [Content-Type:"application/json;charset=UTF-8", Content-Length:"52"]
+
+
+# Created at 2024-03-03T20:25:05.459
+Unexpected IOException with stream:              Body = {"id":null,"name":"Test","author":"Test","price":50}
+
+
+# Created at 2024-03-03T20:25:05.462
+Unexpected IOException with stream:     Session Attrs = {}
+
+
+# Created at 2024-03-03T20:25:05.464
+Unexpected IOException with stream: 
+
+
+# Created at 2024-03-03T20:25:05.466
+Unexpected IOException with stream: Handler:
+
+
+# Created at 2024-03-03T20:25:05.467
+Unexpected IOException with stream:              Type = org.springframework.web.servlet.resource.ResourceHttpRequestHandler
+
+
+# Created at 2024-03-03T20:25:05.470
+Unexpected IOException with stream: 
+
+
+# Created at 2024-03-03T20:25:05.472
+Unexpected IOException with stream: Async:
+
+
+# Created at 2024-03-03T20:25:05.474
+Unexpected IOException with stream:     Async started = false
+
+
+# Created at 2024-03-03T20:25:05.475
+Unexpected IOException with stream:      Async result = null
+
+
+# Created at 2024-03-03T20:25:05.477
+Unexpected IOException with stream: 
+
+
+# Created at 2024-03-03T20:25:05.479
+Unexpected IOException with stream: Resolved Exception:
+
+
+# Created at 2024-03-03T20:25:05.481
+Unexpected IOException with stream:              Type = null
+
+
+# Created at 2024-03-03T20:25:05.483
+Unexpected IOException with stream: 
+
+
+# Created at 2024-03-03T20:25:05.485
+Unexpected IOException with stream: ModelAndView:
+
+
+# Created at 2024-03-03T20:25:05.487
+Unexpected IOException with stream:         View name = null
+
+
+# Created at 2024-03-03T20:25:05.490
+Unexpected IOException with stream:              View = null
+
+
+# Created at 2024-03-03T20:25:05.492
+Unexpected IOException with stream:             Model = null
+
+
+# Created at 2024-03-03T20:25:05.495
+Unexpected IOException with stream: 
+
+
+# Created at 2024-03-03T20:25:05.496
+Unexpected IOException with stream: FlashMap:
+
+
+# Created at 2024-03-03T20:25:05.498
+Unexpected IOException with stream:        Attributes = null
+
+
+# Created at 2024-03-03T20:25:05.500
+Unexpected IOException with stream: 
+
+
+# Created at 2024-03-03T20:25:05.502
+Unexpected IOException with stream: MockHttpServletResponse:
+
+
+# Created at 2024-03-03T20:25:05.504
+Unexpected IOException with stream:            Status = 404
+
+
+# Created at 2024-03-03T20:25:05.505
+Unexpected IOException with stream:     Error message = null
+
+
+# Created at 2024-03-03T20:25:05.507
+Unexpected IOException with stream:           Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers"]
+
+
+# Created at 2024-03-03T20:25:05.509
+Unexpected IOException with stream:      Content type = null
+
+
+# Created at 2024-03-03T20:25:05.510
+Unexpected IOException with stream:              Body = 
+
+
+# Created at 2024-03-03T20:25:05.512
+Unexpected IOException with stream:     Forwarded URL = null
+
+
+# Created at 2024-03-03T20:25:05.514
+Unexpected IOException with stream:    Redirected URL = null
+
+
+# Created at 2024-03-03T20:25:05.515
+Unexpected IOException with stream:           Cookies = []
+
+
+# Created at 2024-03-03T20:25:05.549
+Unexpected IOException: 8,1,com.task.management.integration.TaskControllerTestIT,testCreateTask,null,Status expected:<200> but was:<404>,null,Status expected:<200> but was:<404>,TaskControllerTestIT.testCreateTask:59 Status expected:<200> but was:<404>,java.lang.AssertionError: Status expected:<200> but was:<404>\000A\0009at com.task.management.integration.TaskControllerTestIT.testCreateTask(TaskControllerTestIT.java:59)\000A
+
+
+# Created at 2024-03-03T20:25:06.159
+Unexpected IOException: 2,1,org.apache.maven.surefire.junitplatform.JUnitPlatformProvider,com.task.management.integration.TaskControllerTestIT,null,null,null
+
+

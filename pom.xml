@@ -279,7 +279,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<finalName>book-management</finalName>
+		<finalName>Task-Management</finalName>
 	</build>
 	<reporting>
 		<plugins>
