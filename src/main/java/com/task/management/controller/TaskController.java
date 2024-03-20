@@ -2,7 +2,6 @@ package com.task.management.controller;
 
 import javax.validation.Valid;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,7 +18,6 @@ import com.task.management.service.TaskService;
 @RequestMapping("/tasks")
 public class TaskController {
 
-	@Autowired
 	private TaskService taskService;
 
 	@GetMapping("/{id}")

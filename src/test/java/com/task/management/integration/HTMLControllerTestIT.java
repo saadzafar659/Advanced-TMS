@@ -54,7 +54,7 @@ public class HTMLControllerTestIT {
 	private TaskRepository taskRepository;
 
 	@Test
-	public void testSaveContact() {
+	 void testSaveContact() {
 		// Given
 		TaskDto taskDto = new TaskDto();
 		taskDto.setName("Test Contact");

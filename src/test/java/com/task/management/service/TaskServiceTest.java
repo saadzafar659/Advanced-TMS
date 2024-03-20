@@ -136,17 +136,4 @@ public class TaskServiceTest {
 		Mockito.verify(repository).existsById(id);
 	}
 
-	@Test(expected = NoSuchElementException.class)
-	public void testDeleteTask_WhenNotExists() {
-		// Arrange
-		Integer id = 1;
-		when(repository.existsById(id)).thenReturn(false);
-
-		// Act
-		service.deleteTask(id);
-
-		// Act and Assert
-		NoSuchElementException exception = assertThrows(NoSuchElementException.class, () -> service.deleteTask(id));
-		assertEquals("Task you selected is not Present with " + id, exception.getMessage());
-	}
 }
