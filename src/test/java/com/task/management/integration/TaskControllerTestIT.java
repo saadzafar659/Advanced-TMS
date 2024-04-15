@@ -49,7 +49,7 @@ public class TaskControllerTestIT {
 	private ObjectMapper objectMapper;
 
 	@Test
-	public void testCreateTask() throws Exception {
+	void testCreateTask() throws Exception {
 		TaskDto taskDto = new TaskDto();
 		taskDto.setName("Test");
 		taskDto.setAuthor("Test");
