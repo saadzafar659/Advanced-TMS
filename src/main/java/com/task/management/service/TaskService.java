@@ -2,6 +2,7 @@ package com.task.management.service;
 
 import java.util.NoSuchElementException;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.task.management.entity.TaskEntity;
@@ -12,6 +13,7 @@ import com.task.management.repository.TaskRepository;
 @Service
 public class TaskService {
 
+	@Autowired
 	private TaskRepository taskRepository;
 
 	public TaskDto getTask(Integer id) {

@@ -19,7 +19,9 @@ import org.testcontainers.containers.MySQLContainer;
 import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.task.management.model.TaskDto;
+import com.task.management.repository.TaskRepository;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @AutoConfigureMockMvc
@@ -45,8 +47,14 @@ public class HTMLControllerTestIT {
 	@Autowired
 	private TestRestTemplate restTemplate;
 
+	@Autowired
+	private ObjectMapper objectMapper;
+
+	@Autowired
+	private TaskRepository taskRepository;
+
 	@Test
-	void testSaveContact() {
+	public void testSaveContact() {
 		// Given
 		TaskDto taskDto = new TaskDto();
 		taskDto.setName("Test Contact");
